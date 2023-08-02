@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@layer components{
+
+    .cool{
+        @apply relative before:content-[''] before:absolute before:w-full before:h-1 before:bg-violet-700 before:rounded before:bottom-0 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100 before:-mb-1;
+    }
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.transactions::-webkit-scrollbar{
+    display: block;
+    background:transparent;
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb{
+   
+    background-color: #ef233c;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-corner{
+    display: none;
+}
